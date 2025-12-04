@@ -95,3 +95,66 @@
     padding: $space-6 $space-4;
   }
 }
+
+// pattern toggle
+.aura-pattern-toggle {
+  margin-top: $space-6;
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+
+  .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba($text-color, 0.75);
+  }
+
+  .pattern-buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: $space-2;
+  }
+}
+
+.pattern-button {
+  position: relative;
+  padding: $space-2 $space-4;
+  //border-radius: 999px;
+  //border: 1px solid rgba(255, 255, 255, 0.25);
+  //background: rgba(2, 3, 18, 0.6);
+  color: $text-color;
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  // transition:
+  //   background 180ms ease,
+  //   border-color 180ms ease,
+  //   transform 150ms ease,
+  //   box-shadow 180ms ease;
+  //box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+
+  &:hover {
+    //border-color: rgba(255, 255, 255, 0.55);
+    //box-shadow: 0 0 24px rgba(255, 255, 255, 0.18);
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $accent-color;
+    outline-offset: 2px;
+  }
+
+  &--active {
+    // background: radial-gradient(
+    //   circle at top left,
+    //   rgba(255, 180, 242, 0.35),
+    //   rgba(2, 3, 18, 0.9)
+    // );
+    // border-color: rgba(255, 255, 255, 0.8);
+    // box-shadow: 0 0 30px rgba(255, 180, 242, 0.4);
+  }
+}

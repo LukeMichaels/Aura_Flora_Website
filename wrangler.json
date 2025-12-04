@@ -1,6 +1,5 @@
 {
   "name": "aura-flora",
-  "main": "src/main.tsx",
   "compatibility_date": "2025-12-04",
   "assets": {
     "directory": "./dist"

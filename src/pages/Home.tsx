@@ -1,7 +1,25 @@
 // src/pages/Home.tsx
 import type { FC } from "react";
+import type { AuraPattern } from "../components/AuraBackground";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faWater,
+  faHeartPulse,
+  faBolt,
+} from "@fortawesome/free-solid-svg-icons";
 
-const Home: FC = () => {
+interface HomeProps {
+  pattern: AuraPattern;
+  onPatternChange: (pattern: AuraPattern) => void;
+}
+
+const ICONS: Record<AuraPattern, any> = {
+  flow: faWater,
+  pulse: faHeartPulse,
+  spark: faBolt,
+};
+
+const Home: FC<HomeProps> = ({ pattern, onPatternChange }) => {
   return (
     <main className="aura-main" aria-labelledby="aura-title">
       <section className="aura-hero">
@@ -29,6 +47,28 @@ const Home: FC = () => {
               </span>
             </div>
           </div>
+
+          <div className="aura-pattern-toggle" aria-label="Background patterns">
+            <div className="pattern-buttons" role="radiogroup">
+              {(["flow", "pulse", "spark"] as AuraPattern[]).map((key) => (
+                <button
+                  key={key}
+                  type="button"
+                  className={
+                    pattern === key
+                      ? "pattern-button pattern-button--active"
+                      : "pattern-button"
+                  }
+                  onClick={() => onPatternChange(key)}
+                  role="radio"
+                  aria-checked={pattern === key}
+                  aria-label={key} >
+                  <FontAwesomeIcon icon={ICONS[key]} />
+                </button>
+              ))}
+            </div>
+          </div>
+
         </div>
       </section>
     </main>

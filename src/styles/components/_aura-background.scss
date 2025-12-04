@@ -1,3 +1,6 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
 .aura-bg {
   position: fixed;
   inset: 0;
@@ -12,5 +15,16 @@
     filter: blur(36px) saturate(1.6) brightness(1.1);
     transform: scale(1.1);
     will-change: transform, filter;
+
+    @include respond-to('b-900') {
+      //filter: blur(20px) saturate(1.85) brightness(1.9);
+      transform: scale(1.08);
+    }
+
+    @include respond-to('b-600') {
+      //filter: blur(20px) saturate(2) brightness(2);
+      transform: scale(1.04);
+    }
+
   }
 }

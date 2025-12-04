@@ -134,9 +134,6 @@
 .pattern-button {
   position: relative;
   padding: $space-2 $space-4;
-  //border-radius: 999px;
-  //border: 1px solid rgba(255, 255, 255, 0.25);
-  //background: rgba(2, 3, 18, 0.6);
   color: $text-color;
   background: none;
   border: none;
@@ -144,16 +141,8 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
-  // transition:
-  //   background 180ms ease,
-  //   border-color 180ms ease,
-  //   transform 150ms ease,
-  //   box-shadow 180ms ease;
-  //box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 
   &:hover {
-    //border-color: rgba(255, 255, 255, 0.55);
-    //box-shadow: 0 0 24px rgba(255, 255, 255, 0.18);
     transform: translateY(-1px);
   }
 

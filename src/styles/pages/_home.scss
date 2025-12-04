@@ -42,12 +42,24 @@
   //border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.aura-title {
-  font-size: clamp(2.5rem, 4vw, 3.25rem);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin: 0 0 $space-2;
-}
+.heading {
+  display: flex;
+  align-items: center;
+
+  .flower-icon {
+    max-width: 30px;
+    max-height: 30px; 
+    margin: auto 10px auto 0;
+  }
+
+  .aura-title {
+    font-size: clamp(2.5rem, 4vw, 3.25rem);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: auto 0 auto 0;
+  }
+
+} // .heading
 
 .aura-tagline {
   margin: 0 0 $space-4;

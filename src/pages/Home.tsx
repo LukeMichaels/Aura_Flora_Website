@@ -1,11 +1,13 @@
 // src/pages/Home.tsx
 import type { FC } from "react";
 import type { AuraPattern } from "../components/AuraBackground";
+import FlowerIcon from "../assets/flower.svg?react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWater,
   faHeartPulse,
   faBolt,
+  faSpa,
 } from "@fortawesome/free-solid-svg-icons";
 
 interface HomeProps {
@@ -24,17 +26,18 @@ const Home: FC<HomeProps> = ({ pattern, onPatternChange }) => {
     <main className="aura-main" aria-labelledby="aura-title">
       <section className="aura-hero">
         <div className="aura-hero-inner">
-          <h1 id="aura-title" className="aura-title">
-            Aura Flora
-          </h1>
+          <div className="heading">
+            <FlowerIcon className="flower-icon" />
+            <h1 id="aura-title" className="aura-title">
+              Aura Flora
+            </h1>
+          </div>
           <p className="aura-tagline">
             Interactive, bio-reactive light sculpture
           </p>
-
           <p className="aura-body">
             Aura Flora invites you to become part of its circuitry. Each flower listens to subtle variations in your skin’s conductivity and responds with evolving light patterns unique to your interaction. These bio-reactive blooms create a gentle dialogue between human presence and illuminated sculpture, turning invisible signals into a living display of motion and color.
           </p>
-
           <div className="aura-meta">
             <div className="aura-meta-item">
               <span className="label">Artist</span>

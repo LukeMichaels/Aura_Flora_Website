@@ -33,7 +33,7 @@ const Home: FC<HomeProps> = ({ pattern, onPatternChange }) => {
             </h1>
           </div>
           <p className="aura-tagline">
-            Interactive, bio-reactive light sculpture
+            Bio-reactive light sculpture
           </p>
           <p className="aura-body">
             Aura Flora invites you to become part of its circuitry. Each flower listens to subtle variations in your skin’s conductivity and responds with evolving light patterns unique to your interaction. These bio-reactive blooms create a gentle dialogue between human presence and illuminated sculpture, turning invisible signals into a living display of motion and color.

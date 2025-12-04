@@ -1,0 +1,97 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.app.aura-app {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.aura-main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: $space-8 $space-4;
+}
+
+.aura-hero {
+  width: 100%;
+}
+
+.aura-hero-inner {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: $space-8 $space-6;
+  border-radius: $radius-xl;
+  // background: radial-gradient(
+  //     circle at top left,
+  //     rgba(255, 180, 242, 0.18),
+  //     transparent 60%
+  //   ),
+  //   radial-gradient(
+  //     circle at bottom right,
+  //     rgba(94, 233, 255, 0.18),
+  //     transparent 55%
+  //   ),
+  //   rgba(2, 3, 18, 0.8);
+  //box-shadow: $shadow-soft;
+  backdrop-filter: blur(24px);
+  //border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.aura-title {
+  font-size: clamp(2.5rem, 4vw, 3.25rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 $space-2;
+}
+
+.aura-tagline {
+  margin: 0 0 $space-4;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba($text-color, 0.82);
+}
+
+.aura-body {
+  margin: 0 0 $space-6;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: rgba($text-color, 0.92);
+}
+
+.aura-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-4;
+}
+
+.aura-meta-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+
+  .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba($text-color, 0.7);
+    margin-bottom: $space-1;
+  }
+
+  .value {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: $accent-color-soft;
+  }
+}
+
+@media (max-width: 600px) {
+  .aura-hero-inner {
+    padding: $space-6 $space-4;
+  }
+}

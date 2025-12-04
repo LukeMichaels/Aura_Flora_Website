@@ -1,0 +1,10 @@
+@use "./utils/variables";
+@use "./utils/mixins";
+@use "./utils/reset";
+@use "./utils/normalize";
+@use "./utils/base";
+@use "./utils/helpers";
+@use "./components/aura-background";
+//@use "./components/footer";
+//@use "./components/header";
+@use "./pages/home";

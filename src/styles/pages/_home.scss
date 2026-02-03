@@ -76,6 +76,36 @@
   color: rgba($text-color, 0.92);
 }
 
+.visit-button {
+  width: 170px;
+  display: block;
+  padding: $space-2 $space-4;
+  margin: 0 0 1.5rem;
+  color: $bg-color;
+  background: $text-color;
+  border: $text-color;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 1000ms linear;
+  -ms-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+
+  &:hover {
+    color: $text-color;
+    background: $bg-color;
+    border: $bg-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $accent-color;
+    outline-offset: 2px;
+  }
+}
+
 .aura-meta {
   display: flex;
   flex-wrap: wrap;

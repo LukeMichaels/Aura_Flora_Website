@@ -38,6 +38,18 @@ const Home: FC<HomeProps> = ({ pattern, onPatternChange }) => {
           <p className="aura-body">
             Aura Flora invites you to become part of its circuitry. Each flower listens to subtle variations in your skin’s conductivity and responds with evolving light patterns unique to your interaction. These bio-reactive blooms create a gentle dialogue between human presence and illuminated sculpture, turning invisible signals into a living display of motion and color.
           </p>
+          <p className="aura-body">
+            Between Feb 1 and 28th Aura Flora can be experienced at the Portland Visitors Center. Interactive from 9am - 5pm, viewable through the window all night.
+          </p>
+          <a 
+            className="visit-button"
+            href="https://maps.app.goo.gl/AhU7HT4i59fk32Lo8"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Google Maps directions to Aura Flora at the Portland Visitor Center"
+          >
+            Visit Aura Flora
+          </a>
           <div className="aura-meta">
             <div className="aura-meta-item">
               <span className="label">Artist</span>

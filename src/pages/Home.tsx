@@ -39,7 +39,7 @@ const Home: FC<HomeProps> = ({ pattern, onPatternChange }) => {
             Aura Flora invites you to become part of its circuitry. Each flower listens to subtle variations in your skin’s conductivity and responds with evolving light patterns unique to your interaction. These bio-reactive blooms create a gentle dialogue between human presence and illuminated sculpture, turning invisible signals into a living display of motion and color.
           </p>
           <p className="aura-body">
-            Between Feb 1 and 28th Aura Flora can be experienced at the Portland Visitors Center. Interactive from 9am - 5pm, viewable through the window all night.
+            Between Feb 1 and 28th Aura Flora can be experienced at the Portland Visitor Center. Interactive from 9am - 5pm, then viewable through the window the rest of the night.
           </p>
           <a 
             className="visit-button"
